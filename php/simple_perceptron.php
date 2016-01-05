@@ -2,10 +2,11 @@
 
 // 識別関数y=w^Txの計算
 function calc_recognition($weightVector, $inputVector) {
-   var $out = calc_vector($weightVector, $inputVector);
+   // ベクトル同士の計算
+   $out = calc_vector($weightVector, $inputVector);
    $ret = $out >= 0 ? 1 : -1;
 
-   return [$ret, $out]
+   return [$ret, $out];
 }
 
 // ベクトル同士の計算
